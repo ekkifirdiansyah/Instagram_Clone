@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
+import 'package:instagram_clone/app/modules/widgets/home.dart';
 
 class HomeController extends GetxController {
   RxInt indexWidget = 0.obs;
@@ -9,12 +10,7 @@ class HomeController extends GetxController {
   }
 
   List<Widget> myWidgets = [
-    Center(
-      child: Text(
-        "Home",
-        style: TextStyle(fontSize: 20),
-      ),
-    ),
+    HomeWidget(),
     Center(
       child: Text(
         "Search",
